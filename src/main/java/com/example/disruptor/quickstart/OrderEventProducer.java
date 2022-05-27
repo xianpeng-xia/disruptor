@@ -22,6 +22,7 @@ public class OrderEventProducer {
 
             // 3 赋值
             orderEvent.setValue(data.getLong(0));
+            System.out.println("生产者: value = " + data.getLong(0) + " seq = " + sequence);
 
         } finally {
             // 4 提交发布操作
