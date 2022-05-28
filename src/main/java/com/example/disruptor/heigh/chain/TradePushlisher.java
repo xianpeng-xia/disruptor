@@ -1,4 +1,4 @@
-package com.example.disruptor.heigh;
+package com.example.disruptor.heigh.chain;
 
 import java.util.Random;
 import java.util.concurrent.CountDownLatch;

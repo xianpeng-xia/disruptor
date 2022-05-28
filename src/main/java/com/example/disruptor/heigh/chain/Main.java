@@ -1,19 +1,18 @@
-package com.example.disruptor.heigh;
+package com.example.disruptor.heigh.chain;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import com.example.disruptor.heigh.handler.TradeAddPriceHandler;
-import com.example.disruptor.heigh.handler.TradePrintHandler;
-import com.example.disruptor.heigh.handler.TradeResetPriceHandler;
-import com.example.disruptor.heigh.handler.TradeSetIdHandler;
-import com.example.disruptor.heigh.handler.TradeSetNameHandler;
+import com.example.disruptor.heigh.chain.handler.TradeAddPriceHandler;
+import com.example.disruptor.heigh.chain.handler.TradePrintHandler;
+import com.example.disruptor.heigh.chain.handler.TradeResetPriceHandler;
+import com.example.disruptor.heigh.chain.handler.TradeSetIdHandler;
+import com.example.disruptor.heigh.chain.handler.TradeSetNameHandler;
 import com.lmax.disruptor.BusySpinWaitStrategy;
 import com.lmax.disruptor.EventHandler;
 import com.lmax.disruptor.RingBuffer;
 import com.lmax.disruptor.dsl.Disruptor;
-import com.lmax.disruptor.dsl.EventHandlerGroup;
 import com.lmax.disruptor.dsl.ProducerType;
 
 public class Main {

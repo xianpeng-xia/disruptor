@@ -1,6 +1,6 @@
-package com.example.disruptor.heigh.handler;
+package com.example.disruptor.heigh.chain.handler;
 
-import com.example.disruptor.heigh.Trade;
+import com.example.disruptor.heigh.chain.Trade;
 import com.lmax.disruptor.EventHandler;
 
 public class TradeAddPriceHandler implements EventHandler<Trade> {

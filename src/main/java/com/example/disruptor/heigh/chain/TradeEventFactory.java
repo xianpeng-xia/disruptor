@@ -1,4 +1,4 @@
-package com.example.disruptor.heigh;
+package com.example.disruptor.heigh.chain;
 
 public class TradeEventFactory implements com.lmax.disruptor.EventFactory<Trade> {
     @Override
