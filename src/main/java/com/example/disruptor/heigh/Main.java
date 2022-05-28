@@ -22,12 +22,19 @@ public class Main {
         );
 
         // 2 把消费者设置到Disruptor中，
+
         // 2.1 串行操作
-        disruptor.handleEventsWith(new TradeSetNameHandler())
+       /*
+       disruptor.handleEventsWith(new TradeSetNameHandler())
                 .handleEventsWith(new TradeSetIdHandler())
                 .handleEventsWith(new TradePrintHandler());
+        */
 
         // 2.2 并行操作
+        disruptor.handleEventsWith(new TradeSetNameHandler(), new TradeSetIdHandler(), new TradePrintHandler());
+        // disruptor.handleEventsWith(new TradeSetIdHandler());
+        // disruptor.handleEventsWith(new TradePrintHandler());
+
 
         // 3 启动Disruptor
         RingBuffer<Trade> ringBuffer = disruptor.start();

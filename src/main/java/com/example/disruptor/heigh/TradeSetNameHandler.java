@@ -12,7 +12,7 @@ public class TradeSetNameHandler implements EventHandler<Trade>, WorkHandler<Tra
     @Override
     public void onEvent(Trade event) throws Exception {
         System.out.println("setName...");
-        event.setName("H1");
         Thread.sleep(1000);
+        event.setName("H1");
     }
 }
