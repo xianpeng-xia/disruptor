@@ -1,7 +1,8 @@
-package com.example.disruptor.heigh;
+package com.example.disruptor.heigh.handler;
 
 import java.util.UUID;
 
+import com.example.disruptor.heigh.Trade;
 import com.lmax.disruptor.EventHandler;
 
 public class TradePrintHandler implements EventHandler<Trade> {

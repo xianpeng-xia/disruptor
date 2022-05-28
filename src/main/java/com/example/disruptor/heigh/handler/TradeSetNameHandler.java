@@ -1,5 +1,6 @@
-package com.example.disruptor.heigh;
+package com.example.disruptor.heigh.handler;
 
+import com.example.disruptor.heigh.Trade;
 import com.lmax.disruptor.EventHandler;
 import com.lmax.disruptor.WorkHandler;
 
